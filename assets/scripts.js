@@ -122,13 +122,13 @@
             tabs.forEach(tab => {
                 tab.addEventListener('click', () => {
                     // Remove active class from all tabs and panes
-                    tabs.forEach(t => t.classList.remove('bg-primary', 'text-white'));
+                    tabs.forEach(t => t.classList.remove('bg-green-500', 'text-white'));
                     tabs.forEach(t => t.classList.add('bg-gray-200', 'text-dark'));
                     tabPanes.forEach(pane => pane.classList.add('hidden'));
 
                     // Add active class to clicked tab
                     tab.classList.remove('bg-gray-200', 'text-dark');
-                    tab.classList.add('bg-primary', 'text-white');
+                    tab.classList.add('bg-green-500', 'text-white');
 
                     // Show corresponding pane
                     const tabId = tab.getAttribute('data-tab');
